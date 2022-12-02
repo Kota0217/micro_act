@@ -5,8 +5,8 @@ Servo servo1;//サーボ1のインスタンス
 Servo servo2;//サーボ2のインスタンス
 Servo servo3;//サーボ3のインスタンス
 Servo servo4;//サーボ4のインスタンス
-Servo servo5;//サーボ3のインスタンス
-Servo servo6;//サーボ4のインスタンス
+Servo servo5;//サーボ5のインスタンス
+Servo servo6;//サーボ6のインスタンス
 
 
 
