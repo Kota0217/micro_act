@@ -20,6 +20,9 @@ const int s6_init = 90;
 
 void setup(){
 
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+
   Serial.begin(115200);
 
   //サーボ1の信号線を３番ピンに接続
@@ -35,9 +38,10 @@ void setup(){
   servo1.write(s1_init);
   servo2.write(s2_init);
 
-
   servo3.write(s3_init);
   //servo4.write(-20+s4_init);
+
+  servo5.write(8+s5_init);
 
   delay(1000);
 
@@ -48,6 +52,15 @@ void setup(){
   Serial.print("10 degree\n");
   delay(1000);
 
+  //servo5.write(5+s5_init);
+  delay(500);
+
+  digitalWrite(11, HIGH);
+  digitalWrite(12, LOW);
+  delay(500);
+
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
 
 
 
