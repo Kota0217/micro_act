@@ -37,7 +37,7 @@ void setup(){
 
 
   servo3.write(s3_init);
-  servo4.write(-20+s4_init);
+  //servo4.write(-20+s4_init);
 
   delay(1000);
 
@@ -48,6 +48,9 @@ void setup(){
   Serial.print("10 degree\n");
   delay(1000);
 
+
+
+
 }
 
 
@@ -55,6 +58,7 @@ void setup(){
 
 void loop(){
 
+/*
   //初期位置
   servo5.write(s5_init);
   //servo6.write(s6_init);
@@ -68,7 +72,7 @@ void loop(){
   Serial.print("10 degree\n");
   delay(1000);
 
-
+*/
 
 
 }
