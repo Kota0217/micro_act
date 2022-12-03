@@ -20,7 +20,7 @@ const int s6_init = 90;
 
 void setup(){
 
-  pinMode(11, OUTPUT);
+  pinMode(2, OUTPUT);
   pinMode(12, OUTPUT);
 
   Serial.begin(115200);
@@ -35,33 +35,40 @@ void setup(){
   //servo6.attach(12);
 
   //初期位置に移動
-  servo1.write(s1_init);
+  servo1.write(-19+s1_init);
+  servo3.write(-20+s3_init);
   servo2.write(s2_init);
 
-  servo3.write(s3_init);
   //servo4.write(-20+s4_init);
 
-  servo5.write(8+s5_init);
+  servo5.write(9+s5_init);
 
   delay(1000);
 
   //サーボ出力
   //+で反時計周り
-  servo1.write(-15+s1_init);
-  servo3.write(-16+s3_init);
+  servo1.write(-22+s1_init);
+  servo3.write(-27+s3_init);
+
+  servo5.write(6+s5_init);
+
   Serial.print("10 degree\n");
   delay(1000);
 
   //servo5.write(5+s5_init);
-  delay(500);
+  delay(1000);
 
-  digitalWrite(11, HIGH);
+  digitalWrite(2, HIGH);
   digitalWrite(12, LOW);
-  delay(500);
+  delay(1000);
 
-  digitalWrite(11, LOW);
+  digitalWrite(2, LOW);
   digitalWrite(12, HIGH);
+  delay(1000);
 
+  digitalWrite(2, HIGH);
+  digitalWrite(12, LOW);
+  delay(1000);
 
 
 }
@@ -85,6 +92,17 @@ void loop(){
   Serial.print("10 degree\n");
   delay(1000);
 
+*/
+
+/*
+  digitalWrite(2, HIGH);
+  digitalWrite(12, LOW);
+
+  delay(1000);
+
+  digitalWrite(2, LOW);
+  digitalWrite(12, HIGH);
+  delay(1000);
 */
 
 
