@@ -30,27 +30,29 @@ void setup(){
   servo1.attach(4);
   servo2.attach(5);
   servo3.attach(6);
+
   servo4.attach(12);
   servo5.attach(8);
   //servo6.attach(12);
 
   //初期位置に移動
-  servo1.write(-19+s1_init);
-  servo3.write(-20+s3_init);
+  servo1.write(8+s1_init);
+  servo3.write(-18+s3_init);
   servo2.write(s2_init);
 
   //servo4.write(-20+s4_init);
 
-  servo5.write(9+s5_init);
+  servo5.write(11+s5_init);
 
   delay(1000);
 
   //サーボ出力
   //+で反時計周り
-  servo1.write(-22+s1_init);
+  servo1.write(s1_init);
   servo3.write(-27+s3_init);
 
-  servo5.write(6+s5_init);
+  servo5.write(5+s5_init);
+  
 
   Serial.print("10 degree\n");
   delay(1000);
@@ -68,6 +70,7 @@ void setup(){
 
   digitalWrite(2, HIGH);
   digitalWrite(12, LOW);
+
   delay(1000);
 
 
@@ -94,7 +97,7 @@ void loop(){
 
 */
 
-/*
+
   digitalWrite(2, HIGH);
   digitalWrite(12, LOW);
 
@@ -103,7 +106,7 @@ void loop(){
   digitalWrite(2, LOW);
   digitalWrite(12, HIGH);
   delay(1000);
-*/
+
 
 
 }
