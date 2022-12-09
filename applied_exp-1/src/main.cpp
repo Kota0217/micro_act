@@ -69,7 +69,7 @@ void setup(){
 
   delay(1000);
 
-  servo5.write(7+s5_init);
+  servo5.write(8+s5_init);
 
   Serial.print("10 degree\n");
   delay(2000);
@@ -79,20 +79,20 @@ void setup(){
   //ニードルの加工を行う
   needle();
 
-  servo5.write(6.7+s5_init);
+  servo5.write(7.2+s5_init);
 
   needle();
 
-  servo5.write(6.3+s5_init);
+  servo5.write(6.8+s5_init);
   
   needle();
 
 
-  servo5.write(5.8+s5_init);
+  servo5.write(6.4+s5_init);
 
   needle();
 
-  servo5.write(5.5+s5_init);
+  servo5.write(6+s5_init);
 
   needle();
 
