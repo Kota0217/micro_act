@@ -56,20 +56,20 @@ void setup(){
   //サーボ出力
   //+で反時計周り
   servo1.write(-10+s1_init);
-  servo3.write(-20+s3_init);
-  servo2.write(s2_init);
+  servo3.write(-10+s3_init);
+  //servo2.write(s2_init);
   //servo4.write(-20+s4_init);
-  servo5.write(15+s5_init);
+  servo5.write(-5+s5_init);
   delay(1000);
 
 
   //対象物付近へ移動
   servo1.write(-15+s1_init);
-  servo3.write(-27+s3_init);
+  servo3.write(-25+s3_init);
 
   delay(1000);
 
-  servo5.write(8+s5_init);
+  servo5.write(-8+s5_init);
 
   Serial.print("10 degree\n");
   delay(2000);
@@ -79,20 +79,21 @@ void setup(){
   //ニードルの加工を行う
   needle();
 
-  servo5.write(7.2+s5_init);
+  //servo5.write(-13.4+s5_init);
+  servo5.write(-8.6+s5_init);
 
   needle();
 
-  servo5.write(6.8+s5_init);
+  servo5.write(-9.2+s5_init);
   
   needle();
 
 
-  servo5.write(6.4+s5_init);
+  servo5.write(-9.8+s5_init);
 
   needle();
 
-  servo5.write(6+s5_init);
+  servo5.write(-10.2+s5_init);
 
   needle();
 
@@ -100,11 +101,11 @@ void setup(){
   //******************初期位置へ移動*************************
   //サーボ出力
   //+で反時計周り
-  servo5.write(15+s5_init);
+  servo5.write(-5+s5_init);
   delay(1000);
   servo1.write(-10+s1_init);
-  servo3.write(-20+s3_init);
-  servo2.write(s2_init);
+  servo3.write(-10+s3_init);
+  //servo2.write(s2_init);
   //servo4.write(-20+s4_init);
 
   delay(1000);
