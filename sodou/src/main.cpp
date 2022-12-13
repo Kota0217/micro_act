@@ -24,36 +24,25 @@ void setup(){
   //******************初期位置へ移動*************************
   //サーボ出力
   //+で反時計周り
-  servo5.write(15+s5_init);
+  //servo5.write(-5+s5_init);
   delay(1000);
 
+  servo5.write(s5_init);
   delay(1000);
 
-  servo5.write(8+s5_init);
-
-  Serial.print("10 degree\n");
-  delay(2000);
-
-
-  //******************加工フェーズ*************************
-
-  servo5.write(7.2+s5_init);
+  servo5.write(-5+s5_init);
   delay(1000);
 
-  servo5.write(6.8+s5_init);
+  servo5.write(-10+s5_init);
+  delay(1000);
+  
+  servo5.write(-15+s5_init);
   delay(1000);
 
-  servo5.write(6.4+s5_init);
+  servo5.write(-20+s5_init);
   delay(1000);
 
-  servo5.write(6+s5_init);
-  delay(1000);
 
-  //******************初期位置へ移動*************************
-  //サーボ出力
-  //+で反時計周り
-  servo5.write(15+s5_init);
-  delay(1000);
 
 }
 
