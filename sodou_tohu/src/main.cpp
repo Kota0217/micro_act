@@ -27,10 +27,9 @@ void setup(){
   //（PWMピン以外のピンにも接続可）
 
   servo1.attach(4);
-  servo2.attach(5);
   servo3.attach(6);
-  servo4.attach(12);
   servo5.attach(8);
+  servo6.attach(12);
 
   //******************初期位置へ移動*************************
   //サーボ出力
@@ -41,7 +40,7 @@ void setup(){
   servo1.write(-10+s1_init);
   servo3.write(-10+s3_init);
 
-  servo5.write(-5+s5_init);
+  servo5.write(s5_init);
   delay(2000);
 
   /*
@@ -61,44 +60,51 @@ void setup(){
   //対象物付近へ移動
   servo1.write(-15+s1_init);
   servo3.write(-25+s3_init);
-
   delay(1000);
 
   //加工用マニピュレータの加工動作
-  servo5.write(2+s5_init);
+  servo5.write(-2+s5_init);
   //servo6.write(-2+s5_init);
   delay(2000);
 
-  servo5.write(4+s5_init);
+  servo5.write(-4+s5_init);
   //servo6.write(-4+s5_init);
   delay(2000);
 
-  servo5.write(6+s5_init);
+  servo5.write(-6+s5_init);
   //servo6.write(-6+s5_init);
   delay(2000);
 
-  servo5.write(8+s5_init);
+  servo5.write(-8+s5_init);
   //servo6.write(-8+s5_init);
   delay(2000);
   
   
-  servo5.write(10+s5_init);
+  servo5.write(-10+s5_init);
   //servo6.write(-10+s5_init);
   delay(2000);
 
-  servo5.write(12+s5_init);
+  servo5.write(-12+s5_init);
   //servo6.write(-12+s5_init);
   delay(2000);
 
-  servo5.write(14+s5_init);
+  servo5.write(-14+s5_init);
   //servo6.write(-14+s5_init);
   delay(2000);
 
-  servo5.write(16+s5_init);
+  servo5.write(-16+s5_init);
   //servo6.write(-16+s5_init);
   delay(2000);
 //*/
 
+
+
+  //加工終わり
+  servo5.write(s5_init);  
+
+  delay(2000);
+  servo1.write(-10+s1_init);
+  servo3.write(-10+s3_init);
 
 
 }
