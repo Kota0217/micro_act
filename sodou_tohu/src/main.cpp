@@ -37,7 +37,7 @@ void setup(){
   //servo5.write(-5+s5_init);
   delay(1000);
 
-  servo1.write(-10+s1_init);
+  servo1.write(-5+s1_init);
   servo3.write(-10+s3_init);
 
   servo5.write(s5_init);
@@ -58,13 +58,14 @@ void setup(){
 
 /**************************************************************/
   //対象物付近へ移動
-  servo1.write(-15+s1_init);
+  servo1.write(-10+s1_init);
   servo3.write(-25+s3_init);
   delay(1000);
 
   //加工用マニピュレータの加工動作
   servo5.write(-2+s5_init);
   //servo6.write(-2+s5_init);
+
   delay(2000);
 
   servo5.write(-4+s5_init);
@@ -93,8 +94,11 @@ void setup(){
   delay(2000);
 
   servo5.write(-16+s5_init);
-  //servo6.write(-16+s5_init);
   delay(2000);
+
+  servo5.write(-18+s5_init);
+  //servo6.write(-16+s5_init);
+  delay(4000);
 //*/
 
 
